@@ -36,6 +36,7 @@ public class SecurityConfig {
                         // Permite requisições OPTIONS (preflight CORS) para qualquer caminho
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .requestMatchers("/auth/**", "/h2-console-atividade/**").permitAll()
+                        .requestMatchers("/auth/**", "/h2-console/**").permitAll()
                         // Regras para os endpoints de Atividades
                         // PROFESSOR pode criar, editar e excluir
                         .requestMatchers(HttpMethod.POST, "/atividades").hasRole("PROFESSOR")
