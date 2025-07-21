@@ -26,9 +26,9 @@ public class AtividadeService {
         Atividade novaAtividade = new Atividade();
         novaAtividade.setTitulo(request.getTitulo());
         novaAtividade.setDescricao(request.getDescricao());
-        novaAtividade.setDataCriacao(LocalDateTime.now()); // Data de criação automática
+        novaAtividade.setDataCriacao(LocalDateTime.now());
         novaAtividade.setDataEntrega(request.getDataEntrega());
-        novaAtividade.setProfessorId(professorId); // Associa ao professor autenticado
+        novaAtividade.setProfessorId(professorId);
 
         Atividade savedAtividade = atividadeRepository.save(novaAtividade);
         return convertToResponse(savedAtividade);

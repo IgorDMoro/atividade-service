@@ -27,9 +27,9 @@ public class Atividade {
     @Column(nullable = false)
     private LocalDateTime dataCriacao;
 
-    @Column(nullable = true) // Pode ser nula se não houver data de entrega definida
+    @Column(nullable = true)
     private LocalDateTime dataEntrega;
 
-    @Column(nullable = false) // Para vincular ao professor que criou a atividade
+    @Column(nullable = false)
     private Long professorId;
 }

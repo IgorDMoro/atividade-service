@@ -16,11 +16,11 @@ import java.util.function.Function;
 @Component
 public class JwtUtil {
 
-    // A chave para assinar os tokens - DEVE SER A MESMA DO SEU BACKEND PRINCIPAL
+    // A chave para assinar os tokens
     @Value("${jwt.secret}")
     private String SECRET_KEY;
 
-    // Tempo de validação do token - bom ter para consistência, mesmo que só valide
+    // Tempo de validação do token
     @Value("${jwt.expiration}")
     private long EXPIRATION_TIME;
 

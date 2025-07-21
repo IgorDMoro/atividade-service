@@ -13,5 +13,4 @@ public class AtividadeRequest {
     private String titulo;
     private String descricao;
     private LocalDateTime dataEntrega;
-    // Não incluir professorId aqui, ele virá do token do usuário autenticado
 }

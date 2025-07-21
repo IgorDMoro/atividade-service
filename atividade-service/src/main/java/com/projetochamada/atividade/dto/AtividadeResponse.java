@@ -16,6 +16,4 @@ public class AtividadeResponse {
     private LocalDateTime dataCriacao;
     private LocalDateTime dataEntrega;
     private Long professorId;
-    // Opcional: Adicionar nome do professor, mas exigiria comunicação entre microserviços
-    // private String professorNome;
 }
